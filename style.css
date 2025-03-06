@@ -1,0 +1,47 @@
+@import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+/* اضافه کردن رنگ‌های سفارشی */
+--primary: #212a31;
+--secondary: #2e3944;
+--accent: #124e66;
+--light: #748d92;
+--neutral: #d3d9d4;
+scrollbar-width: thin; /* برای مرورگرهای Firefox */
+scrollbar-color: var(--accent) var(--neutral); /* برای مرورگرهای Firefox */
+background-color: var(--neutral);
+color: var(--primary);
+font-family: 'Vazir', sans-serif; /* اگر فونت Vazir دارید، می‌توانید از آن استفاده کنید */
+}
+
+/* استایل اسکرول‌بار برای مرورگرهای WebKit (Chrome, Edge, etc.) */
+::-webkit-scrollbar {
+width: 10px; /* عرض اسکرول‌بار */
+}
+
+::-webkit-scrollbar-track {
+background: var(--neutral); /* رنگ پس‌زمینه اسکرول‌بار */
+border-radius: 5px; /* گوشه‌های گرد */
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--accent); /* رنگ اسکرول‌بار */
+border-radius: 5px; /* گوشه‌های گرد */
+border: 2px solid var(--neutral); /* حاشیه برای زیبایی بیشتر */
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--secondary); /* رنگ اسکرول‌بار هنگام هاور */
+}
+
+/* اضافه کردن رنگ‌های سفارشی به کلاس‌ها */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.bg-light { background-color: var(--light); }
+.bg-neutral { background-color: var(--neutral); }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }
+.text-light { color: var(--light); }
+.text-neutral { color: var(--neutral); }
